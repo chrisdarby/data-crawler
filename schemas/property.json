@@ -1,0 +1,155 @@
+[
+    { 
+        "name" : "internal_id",
+        "open" : "propertyId=",
+        "close" : "&pageNumber",
+        "filters" : []
+    },
+    { 
+        "name" : "display_name",
+        "open" : "<h1 id=\"propertytype\">",
+        "close" : "</h1>",
+        "filters" : []
+    },
+
+    { 
+        "name" : "bedrooms",
+        "open" : "<h1 id=\"propertytype\">",
+        "close" : "</h1>",
+        "filters" : [
+            { "name" : "numbers_only" }
+        ]
+    },
+    { 
+        "name" : "bathrooms",
+        "open" : "",
+        "close" : "",
+        "filters" : []
+    },
+    { 
+        "name" : "number",
+        "open" : "",
+        "close" : "",
+        "filters" : []
+    },
+    { 
+        "name" : "street",
+        "open" : "<h2>",
+        "close" : "</h2>",
+        "filters" : [
+            { "name" : "strip_tags" },
+            { "name" : "trim" },
+            { "name" : "remove_new_lines" },
+            { "name" : "commas_to_array" },
+            { "name" : "return_by_index", "values" : [0]}
+        ]
+    },
+    { 
+        "name" : "city",
+        "open" : "<h2>",
+        "close" : "</h2>",
+        "filters" : [
+            { "name" : "strip_tags" },
+            { "name" : "trim" },
+            { "name" : "remove_new_lines" },
+            { "name" : "commas_to_array" },
+            { "name" : "return_by_index", "values" : [1]}
+        ]
+    },
+    { 
+        "name" : "region",
+        "open" : "<h2>",
+        "close" : "</h2>",
+        "filters" : [
+            { "name" : "strip_tags" },
+            { "name" : "trim" },
+            { "name" : "remove_new_lines" },
+            { "name" : "commas_to_array" },
+            { "name" : "return_by_index", "values" : [2]}
+        ]
+    },
+    { 
+        "name" : "zip",
+        "open" : "",
+        "close" : "",
+        "filters" : []
+    },
+    { 
+        "name" : "country",
+        "open" : "",
+        "close" : "",
+        "filters" : [
+            { "name" : "add_to_content" , "values" : [ "before", "UK" ] }
+        ]
+    },
+    { 
+        "name" : "longitude",
+        "open" : "longitude:",
+        "close" : ",",
+        "filters" : []
+    },
+    { 
+        "name" : "latitude",
+        "open" : "latitude:",
+        "close" : ",",
+        "filters" : []
+    },
+    { 
+        "name" : "amount",
+        "open" : "<div id='amount'>",
+        "close" : "</div>",
+        "filters" : [
+            { "name" : "numbers_only" }
+        ]
+    },
+    { 
+        "name" : "currency",
+        "open" : "",
+        "close" : "",
+        "filters" : [
+            { "name" : "add_to_content" , "values" : [ "before", "GBP" ] }
+        ]
+    },
+    { 
+        "name" : "let_frequency",
+        "open" : "<span id='rentalfrequency'>",
+        "close" : "</span>",
+        "filters" : [
+            { "name" : "return_if_conditions", "values" : [ "pw,week,weekly" , "Week" ] },
+            { "name" : "return_if_conditions", "values" : [ "p/m,pcm,monthly,month" , "Month" ] },
+            { "name" : "return_if_conditions", "values" : [ "year,annual,py" , "Annual" ] }
+        ]
+    },
+    { 
+        "name" : "tenure",
+        "open" : "<h1 id=\"propertytype\">",
+        "close" : "</h1>",
+        "filters" : [
+            { "name" : "return_on_condition", "values" : [ "rent", "Rental", "Sale" ] }
+        ]
+    },
+    { 
+        "name" : "description",
+        "open" : "<div class=\"propertyDetailDescription\">",
+        "close" : "</div>",
+        "filters" : [
+            { "name" : "trim" }
+        ]
+    },
+    { 
+        "name" : "features",
+        "open" : "<ul class=\"keyfeatures\">",
+        "close" : "</ul>",
+        "filters" : [
+            { "name" : "li_to_array" }
+        ]
+    },
+    { 
+        "name" : "images",
+        "open" : "<div id=\"outernojs\">",
+        "close" : "</div>",
+        "filters" : [
+            { "name" : "get_images" }
+        ]
+    }
+]

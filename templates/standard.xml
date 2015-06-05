@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdf>
+    <agent>
+        <name>[feed_agent_name]</name>
+        <email>[feed_agent_email]</email>
+        <address>[feed_agent_address]</address>
+        <phone>[feed_agent_phone]</phone>
+    </agent>
+    <listings>
+        <!-- start loop -->
+        <listing>
+            <number>[number]</number>
+            <street>[street]</street>
+            <district>[district]</district>
+            <city>[city]</city>
+            <region>[region]</region>
+            <zip>[zip]</zip>
+            <country>[country]</country>
+            <longitude>[longitude]</longitude>
+            <latitude>[latitude]</latitude>
+            <amount>[amount]</amount>
+            <currency>[currency]</currency>
+            <let_frequency>[let_frequency]</let_frequency>
+            <bond_required>[bond_required]</bond_required>
+            <bond_amount>[bond_amount]</bond_amount>
+            <unit>[unit]</unit>
+            <internal_id>[internal_id]</internal_id>
+            <bedrooms>[bedrooms]</bedrooms>
+            <bathrooms>[bathrooms]</bathrooms>
+            <display_name>[display_name]</display_name>
+            <tenure>[tenure]</tenure>
+            <type>[type]</type>
+            <new_build>[new_build]</new_build>
+            <furnished>[furnished]</furnished>
+            <description>[description]</description>
+            <url>[url]</url>
+            <images>[images|image]</images>
+            <enviro_current>[enviro_current]</enviro_current>
+            <features>[features|item]</features>
+            <enviro_potential>[enviro_potential]</enviro_potential>
+            <extra>[extra]</extra>
+            <agent_name>[agent_name]</agent_name>
+            <energy_current>[energy_current]</energy_current>
+            <energy_potential>[energy_potential]</energy_potential>
+            <agent_address>[agent_address]</agent_address>
+            <agent_city>[agent_city]</agent_city>
+            <agent_postcode>[agent_postcode]</agent_postcode>
+            <agent_phone>[agent_phone]</agent_phone>
+            <agent_email>[agent_email]</agent_email>
+            <size>[size]</size>
+            <plot>[plot]</plot>
+            <pool>[pool]</pool>
+            <part_ownership>[part_ownership]</part_ownership>
+            <leasehold>[leasehold]</leasehold>
+        </listing>
+        <!-- end loop -->
+    </listings>
+</mdf>
